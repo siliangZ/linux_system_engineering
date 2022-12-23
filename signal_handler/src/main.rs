@@ -16,4 +16,5 @@ fn register_signal() {
     let term = Arc::new(AtomicBool::new(false));
     signal_hook::flag::register(signal_hook::consts::SIGTERM, term.clone()).unwrap();
 }
+
 fn main() {}
